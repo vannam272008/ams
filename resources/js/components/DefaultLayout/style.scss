@@ -1,0 +1,131 @@
+.container {
+    margin-top: 48px;
+    // =================================== GRID ===================================
+
+    & .col-0-5,
+    & .col-lg-0-5,
+    & .col-md-0-5,
+    & .col-sm-0-5 {
+        flex: 0 0 auto;
+        width: 4.16666666667%;
+    }
+
+    & .col-0-75,
+    & .col-lg-0-75,
+    & .col-md-0-75,
+    & .col-sm-0-75 {
+        flex: 0 0 auto;
+        width: 6.24999999%;
+    }
+
+    & .col-1-25,
+    & .col-lg-1-25,
+    & .col-md-1-25,
+    & .col-sm-1-25 {
+        flex: 0 0 auto;
+        width: 10.4166666667%;
+    }
+
+    & .col-1-5,
+    & .col-lg-1-5,
+    & .col-md-1-5,
+    & .col-sm-1-5 {
+        flex: 0 0 auto;
+        width: 12.49999999%;
+    }
+
+    & .col-1-75,
+    & .col-lg-1-75,
+    & .col-md-1-75,
+    & .col-sm-1-75 {
+        flex: 0 0 auto;
+        width: 14.5833333333%;
+    }
+
+    & .col-2-25,
+    & .col-lg-2-25,
+    & .col-md-2-25,
+    & .col-sm-2-25 {
+        flex: 0 0 auto;
+        width: 18.74999999%;
+    }
+
+    & .col-2-75,
+    & .col-lg-2-75,
+    & .col-md-2-75,
+    & .col-sm-2-75 {
+        flex: 0 0 auto;
+        width: 22.9166666666%;
+    }
+
+    & .col-4-25,
+    & .col-lg-4-25,
+    & .col-md-4-25,
+    & .col-sm-4-25 {
+        flex: 0 0 auto;
+        width: 35.4166666667%;
+    }
+
+    & .col-7-75,
+    & .col-lg-7-75,
+    & .col-md-7-75,
+    & .col-sm-7-75 {
+        flex: 0 0 auto;
+        width: 64.5833333335%;
+    }
+}
+
+// =================================== GRID ===================================
+
+.box-main-default {
+    margin-top: 30px;
+    justify-content: space-between;
+
+    & .row {}
+
+    & .box-left {
+        & .container {
+            padding: 0;
+        }
+    }
+
+    & .box-right {
+        margin-top: 36px;
+
+        & .container {
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    #root {
+        & .container {
+            max-width: 1600px;
+        }
+    }
+
+}
+
+
+@media (max-width: 570px) {
+
+    .box-main-default {
+
+        & .row {
+            margin: 0px;
+
+            & .header {
+                padding: 0px;
+                margin-bottom: 20px;
+            }
+        }
+
+        & .logo.row {
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+}

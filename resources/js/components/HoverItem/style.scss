@@ -1,0 +1,28 @@
+.hover-item {
+    position: relative;
+  }
+
+.hover-item:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: fit-content;
+    background-color: #EEEEEE;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+.hover-item:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }

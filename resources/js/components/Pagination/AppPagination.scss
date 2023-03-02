@@ -1,0 +1,39 @@
+.app-pagination {
+
+    padding-top: 20px;
+
+    & .pagination {
+        justify-content: end;
+        margin-top: 30px;
+        & .page-current {
+
+            & .page-link{
+                background-color: #cf2338;
+                color: white;
+            }
+
+
+        }
+
+        & .page-item {
+            & a{
+                color: #cf2338;
+            }
+
+
+                // color: #666666;
+                // border: 1px solid #999999;
+                // background-color: #cccccc;
+                // font-size: 0.8rem;
+
+            }
+        }
+
+        & .disabled-btn:disabled{
+            & .page-link{
+                color: #666666;
+            }
+
+
+    }
+}

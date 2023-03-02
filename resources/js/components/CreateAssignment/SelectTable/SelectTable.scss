@@ -1,0 +1,309 @@
+.modal-content-list-select {
+    div.modal-content {
+        width: 1000px;
+        height: 95%;
+
+        .modal-header {
+            display: inline;
+        }
+
+        & .modal-footer {
+            border-top: 1px solid white;
+        }
+    }
+}
+
+
+.modal-body {
+    margin: 10px 30px;
+
+    & .scroll-select {
+        overflow-x: unset;
+    }
+
+    & .srcoll-hz {
+        overflow-y: scroll;
+        height: 310px;
+
+        padding: 0;
+    }
+
+    //hidden ScrollBar
+
+    & .srcoll-hz::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    & .col-box-modal.col-1 {
+        padding: 0px;
+        padding-right: 18px;
+    }
+
+    & .col-box-modal.col-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    & .col-box-modal-type.col-3 {
+        padding-right: 5px;
+        margin-left: -5px
+    }
+
+    & .col-box-modal.col-5 {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+    & .col-box-modal-selcet.col-3 {
+        padding: 0;
+        margin-left: -1px;
+        padding-right: 15.5px;
+    }
+
+    & .col-box-modal-selcet.col-5 {
+        padding-left: 7px;
+        padding-right: 3px;
+    }
+
+    & .col-box-modal-selcet-category.col-3 {
+        padding-right: 0px;
+        padding-left: 18px;
+    }
+
+
+
+}
+
+
+button.btn-close-detail-user.btn.btn-danger {
+    float: right;
+}
+
+.list-select {
+    margin-top: 20px;
+    & .col-1 {
+        & .field {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .field-username {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .btn-field {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 0px;
+
+            & svg {
+                margin-left: 5px;
+            }
+
+            // padding-bottom: 5px;
+        }
+    }
+
+    // font-size: 0.8rem;
+    & .col-3 {
+        & .field {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .field-username {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .btn-field {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 0px;
+
+            & svg {
+                margin-left: 5px;
+            }
+
+            // padding-bottom: 5px;
+        }
+
+
+
+
+    }
+
+    & .col-5 {
+        & .field {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .field-username {
+            // font-size: 0.9rem;
+            border-bottom: 1px solid black;
+        }
+
+        & .btn-field {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 0px;
+
+            & svg {
+                margin-left: 5px;
+            }
+
+            // padding-bottom: 5px;
+        }
+
+
+
+
+    }
+
+    & .row-user-list {
+        margin-top: 5px;
+
+        & .col-radio {
+            .form-check {
+                padding-left: 3rem;
+            }
+
+            & .form-check-input:checked {
+                background-color: #cf2338;
+                border-color: #cf2338
+            }
+
+            & .form-check-input:focus {
+                box-shadow: 0px 0px 2px 0px #cf2338;
+            }
+        }
+
+        & span {
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            border-bottom: 1px solid black;
+        }
+
+        & .btn-edit {
+            padding: 0px;
+            border: none;
+            background-color: white;
+            color: black;
+        }
+
+        & .btn-delete {
+            padding: 0px;
+            margin-left: 10px;
+            border: none;
+            background-color: white;
+            color: #cf2338;
+        }
+
+    }
+
+    & .alert-message {
+        width: 88%;
+        margin-top: 5px;
+    }
+}
+
+.box-containers {
+
+    &.row {
+        width: 100%;
+        position: relative;
+
+        & .box-button {
+            width: 100%;
+            margin-bottom: 0;
+
+            &.col {
+                padding: 0;
+
+                & .btn-cancel {
+                    padding: 10px 30px;
+                    float: right;
+                    border: 0;
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    font-weight: 500;
+                }
+
+                & .btn-save {
+                    padding: 10px 30px;
+                    float: right;
+                    border: 0;
+                    border-radius: 5px;
+                    margin-left: 20px;
+                    background-color: #cf2338;
+                    color: white;
+                    font-weight: 500;
+                }
+
+                & .btn-save:disabled {
+                    opacity: 0.2;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 998px) {
+
+    .modal-content-list-select {
+        & div.modal-content {
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media (max-width: 860px) {
+
+    .modal-content-list-select {
+        & div.modal-content {
+            width: 100%;
+        }
+    }
+
+    .modal-body {
+
+        & .scroll-select {
+            overflow-x: scroll;
+
+        }
+    }
+
+    .list-select {
+        width: 1000px;
+        margin-bottom: 20px;
+
+
+    }
+
+}
+
+@media (max-height: 900px) {
+    .modal-content-list-select {
+        & div.modal-content {
+            height: auto;
+        }
+
+        & .srcoll-hz {
+            overflow-y: scroll;
+            height: 250px;
+        }
+    }
+
+
+}

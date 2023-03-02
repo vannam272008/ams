@@ -1,0 +1,114 @@
+.scroll-assignment {
+    & .list-assignment {
+        margin-top: 30px;
+        // font-size: 0.8rem;
+
+        & .no-sort:disabled {
+            opacity: 1;
+        }
+
+        & .col-1-5,
+        & .col-0-75,
+        & .col-0-5,
+        & .col-1-25,
+        & .col-2-25,
+        & .col-1,
+        & .col-2,
+        & .col-3 {
+            & .field {
+                border-bottom: 1px solid black;
+            }
+
+            & .field-username {
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-field {
+                border: none;
+                background-color: white;
+                color: black;
+                padding: 0px;
+
+                & svg {
+                    //margin-left: 5px;
+                    position: relative;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+        //& span b {
+        //    font-size: 13.8px;
+        //}
+
+        & .row-user-list {
+            margin-top: 5px;
+
+            & span {
+                cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-edit {
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: black;
+            }
+
+            & .btn-delete {
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+            }
+            & .btn-return {
+                position: relative;
+                top: 3px;
+                transform: rotate(155deg);
+                font-size: 14px;
+                padding: 0;
+                border: none;
+                background-color: white;
+                color: #082e4a;
+            }
+
+            & .btn-edit:active,
+            & .btn-delete:active,
+            & .btn-return:active {
+                color: #cf2338;
+                background-color: #fff;
+                border-color: #fff;
+            }
+
+            & .btn-edit:disabled,
+            & .btn-delete:disabled,
+            & .btn-return:disabled {
+                opacity: 0.2;
+            }
+        }
+
+        & .alert-message {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+}
+
+.edit-delete-return {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1589px) {
+    .scroll-assignment {
+        overflow-x: scroll;
+        .list-assignment {
+            width: 1200px;
+            margin-bottom: 20px;
+        }
+    }
+}
