@@ -1,0 +1,50 @@
+.detail-user {
+    font-size: 0.9rem;
+    & .modal-dialog {
+        & .modal-content{
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            z-index: 1200;
+            & .modal-body{
+                overflow-y: auto;
+                overflow-x: auto;
+            }
+        }
+    }
+    & .btn-close-detail-user {
+        font-size: 1.1rem;
+        margin-left: 10px;
+        border: none;
+        background-color: rgb(184, 181, 181);
+        color: rgb(158, 8, 8);
+        z-index: 2000;
+    }
+
+    & .btn-close-detail-user:hover {
+        background-color: rgb(184, 181, 181);
+        color: rgb(158, 8, 8);
+    }
+
+    & .modal-header {
+        background-color: rgb(184, 181, 181);
+        border-bottom: 1px solid black;
+        & .modal-title {
+            padding-left: 25px;
+            color: rgb(158, 8, 8);
+        }
+    }
+
+    & .detail-modal-home {
+        display: flex;
+        margin-bottom: 5px;
+
+        & .title {
+            width: 40%;
+        }
+
+        & .infor {
+            width: 60%;
+        }
+    }
+
+}

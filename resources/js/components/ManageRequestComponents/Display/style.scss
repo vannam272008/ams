@@ -1,0 +1,119 @@
+.scroll-request {
+    overflow-x: unset;
+    .list-request {
+        margin-top: 30px;
+        // font-size: 0.8rem;
+
+        & .no-sort:disabled {
+            opacity: 1;
+        }
+
+        & .col-1-5,
+        & .col-0-5,
+        & .col-0-75,
+        & .col-1-25,
+        & .col-1-75,
+        & .col-2-25,
+        & .col-1,
+        & .col-2,
+        & .col-3 {
+            & .field {
+                border-bottom: 1px solid black;
+            }
+
+            & .field-username {
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-field {
+                border: none;
+                background-color: white;
+                color: black;
+                padding: 0px;
+
+                & svg {
+                    //margin-left: 5px;
+                    position: relative;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+        //& span b {
+        //    font-size: 13.8px;
+        //}
+
+        & .row-user-list {
+            margin-top: 5px;
+            height: 25px;
+
+            & span {
+                cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                border-bottom: 1px solid black;
+            }
+
+            & img,
+            svg {
+                margin-top: -8px;
+                margin-bottom: 4px;
+            }
+
+            & .btn-accepted {
+                font-size: 20px;
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+            }
+
+            & .btn-reject {
+                font-size: 20px;
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+            }
+
+            & .btn-accepted:disabled,
+            .btn-reject:disabled {
+                opacity: 0.2;
+            }
+
+
+            & .btn-edit:active,
+            & .btn-delete:active {
+                color: #cf2338;
+                background-color: #fff;
+                border-color: #fff;
+            }
+        }
+
+        & .alert-message {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .accepted-reject {
+            padding-left: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .invalid-data {
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 1589px) {
+    .scroll-request {
+        overflow-x: scroll;
+        .list-request {
+            width: 1200px;
+            margin-bottom: 20px;
+        }
+    }
+}

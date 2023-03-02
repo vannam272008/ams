@@ -1,0 +1,150 @@
+.scroll-assignment-user {
+    .list-assignment-user {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    & .col-1-5,
+    & .col-0-75,
+    & .col-2-25,
+    & .col-1,
+    & .col-2,
+    & .col-2-75,
+    & .col-3 {
+        & .field {
+            border-bottom: 1px solid black;
+        }
+
+        & .field-username {
+            border-bottom: 1px solid black;
+        }
+
+        & .btn-field {
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 0px;
+
+            & svg {
+                //margin-left: 5px;
+                position: relative;
+            }
+        }
+    }
+
+    //& span b {
+    //    font-size: 13.8px;
+    //}
+    & .user-list-infor {
+        margin-bottom: 20px;
+
+        & .row-user-list {
+
+
+
+            & span {
+                cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-accepted {
+                // padding-bottom: 3px;
+                font-size: 22px;
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+
+                img,
+                svg {
+                    vertical-align: baseline;
+                }
+
+            }
+
+            & .btn-reject {
+                font-size: 22px;
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+
+                img,
+                svg {
+                    vertical-align: baseline;
+                }
+
+            }
+
+            & .btn-reject:disabled,
+            .btn-return:disabled,
+            .btn-accepted:disabled {
+                opacity: 0.2;
+            }
+
+            & .btn-return {
+
+                position: relative;
+                transform: rotate(155deg);
+                font-size: 14px;
+                padding: 0;
+                border: none;
+                background-color: white;
+                color: #082e4a;
+            }
+
+
+            & .btn-edit:active,
+            & .btn-delete:active,
+            & .btn-return:active {
+                color: #cf2338;
+                background-color: #fff;
+                border-color: #fff;
+            }
+        }
+
+    }
+
+
+    & .alert-message {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .accepted-reject-return {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1599px) {
+    .scroll-assignment-user {
+        overflow-x: scroll;
+
+        & .list-assignment-user {
+            width: 1200px;
+        }
+
+        & .row-user-list {
+            width: 1225px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .scroll-assignment-user {
+
+        & .row-user-list {
+            width: 1200px;
+        }
+    }
+}

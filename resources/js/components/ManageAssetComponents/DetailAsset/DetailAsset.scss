@@ -1,0 +1,155 @@
+.detail-asset {
+    font-size: 0.9rem;
+
+    & .modal-dialog {
+        & .modal-content {
+            border: 1px solid black;
+            border-radius: 0.5rem;
+            height: 500px;
+            z-index: 1200;
+            width: 700px;
+
+            & .modal-body {
+                height: 480px;
+                overflow-y: auto;
+                overflow-x: auto;
+            }
+        }
+    }
+
+    margin-top: 270px;
+
+    & .btn-close-detail-asset {
+        font-size: 1.1rem;
+        margin-left: 10px;
+        border: none;
+        background-color: rgb(184, 181, 181);
+        color: rgb(158, 8, 8);
+        z-index: 2000;
+    }
+
+    & .btn-close-detail-asset:hover {
+        background-color: rgb(184, 181, 181);
+        color: rgb(158, 8, 8);
+    }
+
+    & .modal-header {
+        background-color: rgb(184, 181, 181);
+        border-bottom: 1px solid black;
+
+        & .modal-title {
+            padding-left: 25px;
+            color: rgb(158, 8, 8);
+        }
+    }
+
+    & .field {
+        border-bottom: 1px solid black;
+    }
+
+    .invalid-data {
+        color: white;
+    }
+
+    & .scroll {
+        overflow-x: unset;
+    }
+
+    & .detail-modal-asset-history {
+        display: flex;
+        
+        & .title {
+            width: 20%;
+        }
+
+        & .field-date {
+            width: 80px;
+            border-bottom: 1px solid black;
+            margin-right: 20px;
+        }
+
+        & .field-to {
+            width: 80px;
+            border-bottom: 1px solid black;
+            margin-right: 20px;
+        }
+
+        & .field-by {
+            width: 100px;
+            border-bottom: 1px solid black;
+            margin-right: 20px;
+        }
+
+        & .field-returned {
+            width: 100px;
+            border-bottom: 1px solid black;
+        }
+
+        & .infor-date {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        & .infor-to {
+            width: 80px;
+            margin-right: 20px;
+        }
+
+        & .infor-by {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        & .infor-returned {
+            width: 100px;
+        }
+
+    }
+    & .detail-modal-asset {
+        display: flex;
+        margin-bottom: 5px;
+    
+        & .title {
+            width: 20%;
+        }
+    
+        & .infor {
+            width: 80%;
+        }
+    
+    }
+}
+
+@media (max-width: 700px) {
+    .detail-asset {
+        & .modal-dialog {
+            & .modal-content {
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+        & .detail-modal-asset {
+            display: flex;
+            margin-bottom: 5px;
+
+            & .title {
+                width: 40%;
+            }
+
+            & .infor {
+                width: 60%;
+            }
+
+        }
+
+        & .detail-modal-asset-history {
+            display: unset;
+
+        }
+
+        & .scroll {
+            overflow-x: scroll;
+        }
+}
+}

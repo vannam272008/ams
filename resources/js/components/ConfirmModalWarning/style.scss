@@ -1,0 +1,14 @@
+.close-warning {
+    color: #cf2338;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.handle-redirect {
+    & .redirect {
+        color: #51A7F9;
+        text-decoration-line: underline;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}

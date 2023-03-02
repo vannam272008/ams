@@ -1,0 +1,66 @@
+.change-password-first {
+    & div.modal-content {
+        position: fixed;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 40px;
+    }
+
+    & .first-time-message {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & .change {
+        &__password {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            & label {
+                font-weight: 400;
+                font-size: 18px;
+                min-width: 140px;
+            }
+
+            .old-password-in {
+                width: 100%;
+            }
+
+            & input {
+                height: 46px;
+                width: 100%;
+                border: 1px solid rgb(184, 184, 184);
+                border-radius: 4px;
+                padding-right: 38px;
+            }
+
+            & input.focus:focus-visible {
+                outline: 1px solid #cf2338;
+                border-radius: 3px;
+            }
+
+            & input::-ms-reveal {
+                display: none;
+            }
+
+            &.new-pass {
+                margin-top: 24px;
+            }
+
+            & .show__password {
+                position: absolute;
+                right: 12px;
+            }
+        }
+    }
+
+    & .incorrect-password {
+        display: block;
+        color: #cf2338;
+        margin-left: 140px;
+    }
+}
+

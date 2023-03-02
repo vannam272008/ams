@@ -1,0 +1,83 @@
+.scroll-asset {
+    overflow-x: unset;
+    .list-assets {
+        margin-top: 30px;
+        // font-size: 0.8rem;
+
+        & .col-2,
+        & .col-3,
+        & .col-4 {
+            & .field {
+                border-bottom: 1px solid black;
+            }
+
+            & .field-username {
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-field {
+                border: none;
+                background-color: white;
+                color: black;
+                padding: 0px;
+                & svg {
+                    margin-left: 5px;
+                    position: relative;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+        & .row-asset-list {
+            margin-top: 5px;
+            & span {
+                cursor: pointer;
+                overflow: hidden;
+                white-space: nowrap;
+                display: block;
+                border-bottom: 1px solid black;
+            }
+
+            & .btn-edit {
+                padding: 0px;
+                border: none;
+                background-color: white;
+                color: black;
+            }
+
+            & .btn-delete {
+                padding: 0px;
+                margin-left: 10px;
+                border: none;
+                background-color: white;
+                color: #cf2338;
+            }
+
+            & .btn-edit:disabled,
+            & .btn-delete:disabled {
+                opacity: 0.2;
+            }
+        }
+
+        & .alert-message {
+            width: 88%;
+            margin-top: 5px;
+         }
+    }
+}
+
+
+.edit-delete {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .scroll-asset {
+        overflow-x: scroll;
+        .list-assets {
+            width: 700px;
+            margin-bottom: 20px;
+        }
+    }
+}

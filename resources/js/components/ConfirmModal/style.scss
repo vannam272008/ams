@@ -1,0 +1,35 @@
+.modal {
+    .modal-content #confirm-modal-header {
+        background-color: #eff1f5;
+        padding-left: 46px;
+    }
+
+    &-title {
+        color: #cf2338;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &-footer .btn.btn-secondary {
+        background-color: #cf2338;
+        border-color: #cf2338;
+
+        &:active,
+        &:focus-visible {
+            background-color: #cf2338;
+            --bs-btn-active-bg: #cf2338;
+        }
+    }
+
+    &-footer .btn.btn-primary {
+        color: #333;
+        background-color: #fff;
+        border-color: #333;
+
+        &:active,
+        &:focus-visible {
+            background-color: #cf2338;
+            --bs-btn-active-bg: #cf2338;
+        }
+    }
+}
